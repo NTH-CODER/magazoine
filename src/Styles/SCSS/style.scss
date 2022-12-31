@@ -1,0 +1,113 @@
+// color / styles variables
+
+$primary-color: #00C8FA;
+$secondary-color: #F05555;
+$dark-color: #1F2024;
+$warning-color: #FFC61C;
+$pink-color: #FF58C8;
+$success-color: #67BF35;
+$facebook-brand-color: #516EAB;
+$google-brand-color: #EB5E4C;
+$twitter-brand-color: #40BFF5;
+$dribble-brand-color: #F7659C;
+$text-subheading-color-1: #FEC51B;
+$text-subheading-color-2: #008BFF;
+$text-subheading-color-3: #67BF35;
+
+
+// header
+header {
+    .date_weather_socilas_bar {
+        .container {
+            .row {
+                .col-md-7 {
+                    @media screen and (max-width: 425px) {
+                        display: flex !important;
+                        width: 100%;
+                        justify-content: center !important;
+
+                        .d-flex {
+                            .weather_bar,
+                            .signup_bar, .contact_bar, .blog_bar {
+                                border: 0 !important;
+                                margin-right: 0px !important;
+                                padding: 10px !important;
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        .date_bar {
+                            background-color: $primary-color;
+
+                            @media screen and (max-width: 1024px) {
+                                display: none;
+                            }
+                        
+                            small {
+                                font-size: .8rem !important;
+                            }
+                        }
+
+                        .weather_bar,
+                        .signup_bar, .contact_bar, .blog_bar {
+                            a {
+                                transition: .3s ease-in;
+                                small {
+                                    font-size: .8rem !important;
+
+                                    @media screen and (max-width: 768px) {
+                                        font-size: .6rem !important;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $primary-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-md-5 {
+                    @media screen and (max-width: 425px) {
+                        display: flex !important;
+                        justify-content: center !important;
+                    }
+
+                    .d-flex {
+                        div {
+                            a {
+                                transition: .3s ease-in;
+
+                                small {
+                                    font-size: .8rem !important;
+
+                                    @media screen and (max-width: 768px) {
+                                        font-size: .6rem !important;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $primary-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo_banner_box {
+        .container {
+            .row {
+                .logo_box {
+                    @media screen and (max-width: 425px) {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

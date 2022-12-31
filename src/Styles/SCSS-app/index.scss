@@ -1,0 +1,33 @@
+// color / styles variables
+
+$primary-color: #00C8FA;
+$secondary-color: #F05555;
+$dark-color: #1F2024;
+$warning-color: #FFC61C;
+$pink-color: #FF58C8;
+$success-color: #67BF35;
+$facebook-brand-color: #516EAB;
+$google-brand-color: #EB5E4C;
+$twitter-brand-color: #40BFF5;
+$dribble-brand-color: #F7659C;
+$text-subheading-color-1: #FEC51B;
+$text-subheading-color-2: #008BFF;
+$text-subheading-color-3: #67BF35;
+
+
+// default font importation from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+// basic body general styles
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif !important;
+
+    .text-dark {
+        color: $dark-color !important;
+    }
+}

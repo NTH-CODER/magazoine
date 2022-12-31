@@ -1,0 +1,67 @@
+@media screen and (max-width: 425px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 {
+    display: flex !important;
+    width: 100%;
+    justify-content: center !important;
+  }
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar {
+    border: 0 !important;
+    margin-right: 0px !important;
+    padding: 10px !important;
+  }
+}
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .date_bar {
+  background-color: #00C8FA;
+}
+@media screen and (max-width: 1024px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .date_bar {
+    display: none;
+  }
+}
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .date_bar small {
+  font-size: 0.8rem !important;
+}
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a {
+  transition: 0.3s ease-in;
+}
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
+  font-size: 0.8rem !important;
+}
+@media screen and (max-width: 768px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
+    font-size: 0.6rem !important;
+  }
+}
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a:hover,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a:hover, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a:hover, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a:hover {
+  color: #00C8FA !important;
+}
+@media screen and (max-width: 425px) {
+  header .date_weather_socilas_bar .container .row .col-md-5 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a {
+  transition: 0.3s ease-in;
+}
+header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a small {
+  font-size: 0.8rem !important;
+}
+@media screen and (max-width: 768px) {
+  header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a small {
+    font-size: 0.6rem !important;
+  }
+}
+header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a:hover {
+  color: #00C8FA !important;
+}
+@media screen and (max-width: 425px) {
+  header .logo_banner_box .container .row .logo_box {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

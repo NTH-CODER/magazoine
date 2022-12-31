@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PostHub | Magazine & Newspaper website theme</title>
+
+        <!-- bootstrap styling link -->
+        <link rel="stylesheet" href="src/utils/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+
+        <!-- font-awsome styling link -->
+        <link rel="stylesheet" href="src/utils/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+
+        <!-- custome general app styling link -->
+        <link rel="stylesheet" href="src/Styles/SCSS-app/index.css">
+
+        <!-- custome individual element styling link -->
+        <link rel="stylesheet" href="src/Styles/SCSS/style.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="bg-white">
+            <div class="date_weather_socilas_bar border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="d-flex">
+                                <div class="date_bar p-2 ps-3 pe-3">
+                                    <small class="text-white">
+                                        <i class="far fa-clock me-2"></i> <span id="timeCount">Sunday, March 25, 2022</span>
+                                    </small>
+                                </div>
+
+                                <div class="weather_bar p-2 ps-3 pe-3 border-end">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <small>
+                                            <i class="fas fa-cloud-bolt me-2"></i> <span id="weatherTracker">20 <sup>c</sup> - Sydney</span>
+                                        </small>
+                                    </a>
+                                </div>
+
+                                <div class="signup_bar p-2 ps-3 pe-3 border-end">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <small>
+                                            <i class="fas fa-user-circle me-2"></i> <span>Sign Up</span>
+                                        </small>
+                                    </a>
+                                </div>
+
+                                <div class="contact_bar p-2 ps-3 pe-3 border-end">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <small>
+                                            <i class="fas fa-headphones me-2"></i> <span>Contact</span>
+                                        </small>
+                                    </a>
+                                </div>
+
+                                <div class="blog_bar p-2 ps-3 pe-3 border-end">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <small>
+                                            <span>Blog</span>
+                                        </small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="d-flex justify-content-end align-items-center h-100">
+                                <div>
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-facebook-f"></i>
+                                        </small>
+                                    </a>
+
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-twitter"></i>
+                                        </small>
+                                    </a>
+
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </small>
+                                    </a>
+
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </small>
+                                    </a>
+
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-youtube"></i>
+                                        </small>
+                                    </a>
+
+                                    <a href="" class="text-decoration-none me-2 text-dark">
+                                        <small>
+                                            <i class="fab fa-dribbble"></i>
+                                        </small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-3 pb-3 logo_banner_box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 logo_box">
+                            <div class="d-flex align-items-center h-100">
+                                <img src="src/utils/images/logo.webp" width="200" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <img src="src/utils/images/header-banner-1.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg p-0 bg-dark navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <small>Home</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">
+                                <small>Link</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <small>Dropdown</small>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <small>Disabled</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- bootstrap script link -->
+        <script src="src/utils/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+        <!-- font-awsome script link -->
+        <script src="src/utils/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    </body>
 </html>
