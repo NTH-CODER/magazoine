@@ -64,4 +64,44 @@ header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a:hover {
   header .logo_banner_box .container .row .logo_box {
     display: none !important;
   }
+}
+
+nav .container .navbar-toggler {
+  background-color: #444444;
+  border-radius: 0% !important;
+  box-shadow: none !important;
+}
+nav .container .search_box input {
+  background-color: #444444 !important;
+  transition: 0.3s ease-in;
+  visibility: hidden;
+}
+nav .container .search_box input::-webkit-input-placeholder {
+  color: white !important;
+}
+nav .container .search_box input.active_search_box {
+  visibility: visible;
+}
+nav .container .search_box .btn-dark {
+  background-color: #444444 !important;
+}
+nav .container .collapse ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+nav .container .collapse ul li a.active {
+  color: #00C8FA !important;
+}
+
+.marquee_box {
+  background-color: #00C8FA;
+}
+.marquee_box .container .d-flex .news_badge {
+  padding: 8px 10px;
+  color: white;
+  background-color: #F05555;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }/*# sourceMappingURL=style.css.map */

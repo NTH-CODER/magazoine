@@ -13,6 +13,7 @@ $dribble-brand-color: #F7659C;
 $text-subheading-color-1: #FEC51B;
 $text-subheading-color-2: #008BFF;
 $text-subheading-color-3: #67BF35;
+$nav-btn-dark: #444444;
 
 
 // header
@@ -107,6 +108,69 @@ header {
                         display: none !important;
                     }
                 }
+            }
+        }
+    }
+}
+
+// navbar
+nav {
+    .container {
+        .navbar-toggler {
+            background-color: $nav-btn-dark;
+            border-radius: 0% !important;
+            box-shadow: none !important;
+        }
+
+        .search_box {
+            input {
+                background-color: $nav-btn-dark !important;
+                transition: .3s ease-in;
+                visibility: hidden;
+
+                &::-webkit-input-placeholder {
+                    color: white !important;
+                }
+
+                &.active_search_box {
+                    visibility: visible;
+                }
+            }
+
+            .btn-dark {
+                background-color: $nav-btn-dark !important;
+            }
+        }
+
+        .collapse {
+            ul {
+                li {
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: 500;
+
+                        &.active {
+                            color: $primary-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// marquee_box 
+.marquee_box {
+    background-color: $primary-color;
+
+    .container {
+        .d-flex {
+            .news_badge {
+                padding: 8px 10px;
+                color: white;
+                background-color: $secondary-color;
+                width: fit-content !important;
             }
         }
     }

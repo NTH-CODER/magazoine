@@ -8,4 +8,7 @@ body {
 }
 body .text-dark {
   color: #1F2024 !important;
+}
+body .btn {
+  box-shadow: none !important;
 }/*# sourceMappingURL=index.css.map */
