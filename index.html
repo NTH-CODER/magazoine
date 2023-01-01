@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="src/Styles/SCSS/style.css">
     </head>
 
-    <body>
+    <body class="bg-white">
         <!-- header -->
         <header class="bg-white">
             <div class="date_weather_socilas_bar border-bottom">
@@ -130,7 +130,7 @@
         </header>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg p-0 bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg p-0 bg-dark border-0 navbar-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -146,13 +146,19 @@
 
                         <li class="nav-item me-3">
                             <a class="nav-link" href="#">
-                                <small>Link</small>
+                                <small>News</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">
+                                <small>Sports</small>
                             </a>
                         </li>
 
                         <li class="nav-item dropdown me-3">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <small>Dropdown</small>
+                                <small>Lifestyle</small>
                             </a>
 
                             <ul class="dropdown-menu">
@@ -163,20 +169,117 @@
                             </ul>
                         </li>
 
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="">
+                                <small>Fashion</small>
+                            </a>
+                        </li>
+
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="">
+                                <small>Politic</small>
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="">
-                                <small>Disabled</small>
+                                <small>Contact</small>
                             </a>
                         </li>
                     </ul>
                 </div>
+
+                <div class="search_box position-relative d-flex">
+                    <input id="searchField" type="text" class="form-control rounded-0 text-light bg-dark border-0 shadow-none" placeholder="Search anything...">
+                    <button id="searchToggler" class="btn btn-dark h-100 rounded-0">
+                        <i id="seachIcon"></i>
+                    </button>
+                </div>
             </div>
         </nav>
+
+        <!-- marquee -->
+        <section class="marquee_box">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="news_badge">
+                        Breaking News
+                    </div>
+
+                    <div class="text-dark">
+                        <marquee behavior="scroll" direction="left">
+                            <small>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique ratione fugiat iure cupiditate, dolorum quis consequatur architecto. Laudantium iste eligendi tempora ullam unde placeat fugit modi doloremque rem ea?
+                            </small>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hero post -->
+        <section class="hero_post mt-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 p-0 border border-white">
+                        <div class="border border-bottom border-white hero_post_blocks p-3">
+                            <!-- badge -->
+                            <div class="badge treavel_badge fw-normal text-uppercase p-2 text-white position-absolute top-0 start-0">
+                                Travel
+                            </div>
+
+                            <div class="position-absolute bottom-0">
+                                <a href="" class="text-white text-decoration-none">
+                                    <h5 class="fw-bold">Hynpodia helps female travelers find health.
+                                    </h5>
+                                </a>
+
+                                <div class="mt-3 text-white mb-3">
+                                    <small>
+                                        <i class="far fa-clock me-2"></i> 10 March, 2022
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-bottom border-white hero_post_blocks p-3">
+                            <!-- badge -->
+                            <div class="badge fashion_badge fw-normal text-uppercase p-2 text-white position-absolute top-0 start-0">
+                                Fashion
+                            </div>
+
+                            <div class="position-absolute bottom-0">
+                                <a href="" class="text-white text-decoration-none">
+                                    <h5 class="fw-bold">Fashion is about some thing that comes from with in you.</h5>
+                                </a>
+
+                                <div class="mt-3 text-white mb-3">
+                                    <small>
+                                        <i class="far fa-clock me-2"></i> 10 March, 2022
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-0 border border-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat magni expedita, harum iure fugit similique consequatur distinctio. Tenetur in iusto maxime cumque dolorem repellat nulla totam ipsa! Dolorem, quam.
+                    </div>
+
+                    <div class="col-md-3 p-0 border border-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, libero molestias! Modi officiis ipsa voluptates vero labore temporibus! Maxime, aspernatur earum error temporibus officiis sint quae illum distinctio voluptate adipisci?
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- bootstrap script link -->
         <script src="src/utils/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 
         <!-- font-awsome script link -->
         <script src="src/utils/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+
+        <!-- UI js script link -->
+        <script src="src/Scripts/UI-scripts/index.js"></script>
     </body>
 </html>

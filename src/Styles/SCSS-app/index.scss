@@ -30,4 +30,21 @@ body {
     .text-dark {
         color: $dark-color !important;
     }
+
+    .btn {
+        box-shadow: none !important;
+    }
+
+    .badge {
+        border-radius: 0% !important;
+        width: 70px;
+    }
+
+    .treavel_badge {
+        background-color: $warning-color;
+    }
+
+    .fashion_badge {
+        background-color: $pink-color;
+    }
 }

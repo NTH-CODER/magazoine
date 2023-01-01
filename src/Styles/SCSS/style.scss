@@ -13,6 +13,7 @@ $dribble-brand-color: #F7659C;
 $text-subheading-color-1: #FEC51B;
 $text-subheading-color-2: #008BFF;
 $text-subheading-color-3: #67BF35;
+$nav-btn-dark: #444444;
 
 
 // header
@@ -21,7 +22,7 @@ header {
         .container {
             .row {
                 .col-md-7 {
-                    @media screen and (max-width: 425px) {
+                    @media screen and (max-width: 540px) {
                         display: flex !important;
                         width: 100%;
                         justify-content: center !important;
@@ -32,6 +33,21 @@ header {
                                 border: 0 !important;
                                 margin-right: 0px !important;
                                 padding: 10px !important;
+                            }
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            display: flex !important;
+                            width: 100%;
+                            justify-content: center !important;
+    
+                            .d-flex {
+                                .weather_bar,
+                                .signup_bar, .contact_bar, .blog_bar {
+                                    border: 0 !important;
+                                    margin-right: 0px !important;
+                                    padding: 10px !important;
+                                }
                             }
                         }
                     }
@@ -54,10 +70,18 @@ header {
                             a {
                                 transition: .3s ease-in;
                                 small {
-                                    font-size: .8rem !important;
+                                    font-size: .8rem;
 
-                                    @media screen and (max-width: 768px) {
-                                        font-size: .6rem !important;
+                                    @media screen and (max-width: 912px) {
+                                        font-size: .7rem;
+
+                                        @media screen and (max-width: 820px) {
+                                            font-size: .7rem;
+
+                                            @media screen and (max-width: 768px) {
+                                                font-size: .6rem;
+                                            }
+                                        }
                                     }
                                 }
 
@@ -70,9 +94,14 @@ header {
                 }
 
                 .col-md-5 {
-                    @media screen and (max-width: 425px) {
+                    @media screen and (max-width: 540px) {
                         display: flex !important;
                         justify-content: center !important;
+
+                        @media screen and (max-width: 425px) {
+                            display: flex !important;
+                            justify-content: center !important;
+                        }
                     }
 
                     .d-flex {
@@ -103,8 +132,131 @@ header {
         .container {
             .row {
                 .logo_box {
-                    @media screen and (max-width: 425px) {
-                        display: none !important;
+                    @media screen and (max-width: 540px) {
+                        display: none;
+
+                        @media screen and (max-width: 425px) {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// navbar
+nav {
+    .container {
+        .navbar-toggler {
+            background-color: $nav-btn-dark;
+            border-radius: 0% !important;
+            box-shadow: none !important;
+        }
+
+        .search_box {
+            input {
+                background-color: $nav-btn-dark !important;
+                transition: .3s ease-in;
+                visibility: hidden;
+
+                &::-webkit-input-placeholder {
+                    color: white !important;
+                }
+
+                &.active_search_box {
+                    visibility: visible;
+                }
+            }
+
+            .btn-dark {
+                background-color: $nav-btn-dark !important;
+            }
+        }
+
+        .collapse {
+            ul {
+                li {
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: 600;
+                        transition: .3s ease-in;
+
+                        &.active,
+                        &:hover {
+                            color: $primary-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// marquee_box 
+.marquee_box {
+    background-color: $primary-color;
+
+    .container {
+        .d-flex {
+            .news_badge {
+                padding: 8px 10px;
+                color: white;
+                background-color: $secondary-color;
+                width: 200px;
+                text-align: center;
+
+                @media screen and (max-width: 1024px) {
+                    width: 300px;
+
+                    @media screen and (max-width: 912px) {
+                        width: 350px;
+    
+                        @media screen and (max-width: 820px) {
+                            width: 400px;
+        
+                            @media screen and (max-width: 768px) {
+                                width: 350px;
+                                font-size: .8rem;
+            
+                                @media screen and (max-width: 425px) {
+                                    width: 650px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// hero posts
+section.hero_post {
+    .container {
+        .row {
+            .col-md-3 {
+                .hero_post_blocks {
+                    height: 250px;
+                    position: relative;
+
+                    &:hover {
+                        a {
+                            text-decoration: underline !important;
+                        }
+                    }
+                    
+                    &:nth-child(1) {
+                        background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url('../../utils/images/post\ 1.jpg');
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(2) {
+                        background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url('../../utils/images/post\ 2.jpg');
+                        background-position: center;
+                        background-size: cover;
                     }
                 }
             }

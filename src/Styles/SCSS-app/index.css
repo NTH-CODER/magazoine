@@ -8,4 +8,17 @@ body {
 }
 body .text-dark {
   color: #1F2024 !important;
+}
+body .btn {
+  box-shadow: none !important;
+}
+body .badge {
+  border-radius: 0% !important;
+  width: 70px;
+}
+body .treavel_badge {
+  background-color: #FFC61C;
+}
+body .fashion_badge {
+  background-color: #FF58C8;
 }/*# sourceMappingURL=index.css.map */

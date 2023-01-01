@@ -1,4 +1,17 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 {
+    display: flex !important;
+    width: 100%;
+    justify-content: center !important;
+  }
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar {
+    border: 0 !important;
+    margin-right: 0px !important;
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 540px) and (max-width: 425px) {
   header .date_weather_socilas_bar .container .row .col-md-7 {
     display: flex !important;
     width: 100%;
@@ -28,19 +41,37 @@ header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a
 }
 header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
 header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
-  font-size: 0.8rem !important;
+  font-size: 0.8rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
   header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
 header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
-    font-size: 0.6rem !important;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 912px) and (max-width: 820px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 912px) and (max-width: 820px) and (max-width: 768px) {
+  header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a small,
+header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a small, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a small {
+    font-size: 0.6rem;
   }
 }
 header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .weather_bar a:hover,
 header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .signup_bar a:hover, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .contact_bar a:hover, header .date_weather_socilas_bar .container .row .col-md-7 .d-flex .blog_bar a:hover {
   color: #00C8FA !important;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
+  header .date_weather_socilas_bar .container .row .col-md-5 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 540px) and (max-width: 425px) {
   header .date_weather_socilas_bar .container .row .col-md-5 {
     display: flex !important;
     justify-content: center !important;
@@ -60,8 +91,97 @@ header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a small {
 header .date_weather_socilas_bar .container .row .col-md-5 .d-flex div a:hover {
   color: #00C8FA !important;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
+  header .logo_banner_box .container .row .logo_box {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) and (max-width: 425px) {
   header .logo_banner_box .container .row .logo_box {
     display: none !important;
   }
+}
+
+nav .container .navbar-toggler {
+  background-color: #444444;
+  border-radius: 0% !important;
+  box-shadow: none !important;
+}
+nav .container .search_box input {
+  background-color: #444444 !important;
+  transition: 0.3s ease-in;
+  visibility: hidden;
+}
+nav .container .search_box input::-webkit-input-placeholder {
+  color: white !important;
+}
+nav .container .search_box input.active_search_box {
+  visibility: visible;
+}
+nav .container .search_box .btn-dark {
+  background-color: #444444 !important;
+}
+nav .container .collapse ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+}
+nav .container .collapse ul li a.active, nav .container .collapse ul li a:hover {
+  color: #00C8FA !important;
+}
+
+.marquee_box {
+  background-color: #00C8FA;
+}
+.marquee_box .container .d-flex .news_badge {
+  padding: 8px 10px;
+  color: white;
+  background-color: #F05555;
+  width: 200px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .marquee_box .container .d-flex .news_badge {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 912px) {
+  .marquee_box .container .d-flex .news_badge {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 912px) and (max-width: 820px) {
+  .marquee_box .container .d-flex .news_badge {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 912px) and (max-width: 820px) and (max-width: 768px) {
+  .marquee_box .container .d-flex .news_badge {
+    width: 350px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 912px) and (max-width: 820px) and (max-width: 768px) and (max-width: 425px) {
+  .marquee_box .container .d-flex .news_badge {
+    width: 650px !important;
+  }
+}
+
+section.hero_post .container .row .col-md-3 .hero_post_blocks {
+  height: 250px;
+  position: relative;
+}
+section.hero_post .container .row .col-md-3 .hero_post_blocks:hover a {
+  text-decoration: underline !important;
+}
+section.hero_post .container .row .col-md-3 .hero_post_blocks:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url("../../utils/images/post 1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+section.hero_post .container .row .col-md-3 .hero_post_blocks:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url("../../utils/images/post 2.jpg");
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
